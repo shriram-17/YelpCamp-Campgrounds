@@ -2,11 +2,6 @@
 const BaseJoi = require('joi')
 const sanitizeHTML = require('sanitize-html')
 
-// ------------------------------------ Avoiding Cross side scripting ------------------------------
-// JOi doesnt have to check if Html is present in input
-// npm i sanitize-html to check but adding in JOI extension
-// wherever there is string apply escapeHtML there only
-
 const extension = (joi) => ({
     type: 'string',
     base: joi.string(), 

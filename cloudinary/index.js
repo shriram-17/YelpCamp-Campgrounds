@@ -1,5 +1,4 @@
-// For image storage Installl
-// npm i multer && npm i cloudinary && npm i multer-storage-cloudinary
+
 
 const cloudinary = require('cloudinary').v2;
 const { CloudinaryStorage } = require('multer-storage-cloudinary')
